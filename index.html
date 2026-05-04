@@ -233,14 +233,14 @@
 
     <div class="header-stats">
       <div class="stat">
-        <div class="stat-num">~46k</div>
+        <div class="stat-num">~65k</div>
         <div class="stat-label">Lines of code</div>
         <div class="stat-copy">Production-ready codebase, not a prototype or proof of concept.</div>
       </div>
       <div class="stat">
-        <div class="stat-num">9</div>
+        <div class="stat-num">12</div>
         <div class="stat-label">Research workflows</div>
-        <div class="stat-copy">From corpus querying to manuscript evaluation and lecture generation.</div>
+        <div class="stat-copy">From corpus querying to manuscript evaluation, quality assurance, and lecture generation.</div>
       </div>
       <div class="stat">
         <div class="stat-num">Local</div>
@@ -257,7 +257,7 @@
   </div>
 </header>
 
-<div class="version-strip">APE v5.12 &nbsp;·&nbsp; March 2026 &nbsp;·&nbsp; Model-agnostic &nbsp;·&nbsp; Local-first &nbsp;·&nbsp; Apple Silicon</div>
+<div class="version-strip">APE v7.2 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Model-agnostic &nbsp;·&nbsp; Local-first &nbsp;·&nbsp; Apple Silicon</div>
 
 <!-- 01 OVERVIEW -->
 <section><div class="wrap"><div class="reveal">
@@ -299,8 +299,8 @@
 <!-- 03 CAPABILITIES -->
 <section><div class="wrap"><div class="reveal">
   <p class="section-label">03 — Capabilities</p>
-  <h2>Nine research workflows already implemented</h2>
-  <p>The system is best understood as a set of research workflows rather than a single chat feature. These workflows cover daily corpus use, manuscript diagnostics, evidence verification, external literature extension, and teaching output generation.</p>
+  <h2>Twelve research workflows already implemented</h2>
+  <p>The system is best understood as a set of research workflows rather than a single chat feature. These workflows cover daily corpus use, manuscript diagnostics, evidence verification, external literature extension, quality assurance, and teaching output generation.</p>
   <div class="modes-grid">
     <div class="mode-card"><div class="mode-icon">MODE 01</div><div class="mode-title">Query</div><div class="mode-desc">Corpus-grounded questioning. Three response styles: Prover (claim-by-claim), Analyst (verbalized sampling, based on Stanford research), and Brief.</div></div>
     <div class="mode-card"><div class="mode-icon">MODE 02</div><div class="mode-title">Article vs Corpus</div><div class="mode-desc">Compares a manuscript against the indexed corpus to identify missing support, omitted perspectives, and coverage gaps.</div></div>
@@ -310,6 +310,9 @@
     <div class="mode-card"><div class="mode-icon">MODE 06</div><div class="mode-title">External Search</div><div class="mode-desc">Queries OpenAlex (250M+ publications) to extend analysis beyond the local corpus. Only search terms leave the machine.</div></div>
     <div class="mode-card"><div class="mode-icon">MODE 07</div><div class="mode-title">Single-Doc Chat</div><div class="mode-desc">Focused interrogation of one document with direct passage-level grounding and source tracing.</div></div>
     <div class="mode-card"><div class="mode-icon">MODE 08</div><div class="mode-title">Lecture Mode</div><div class="mode-desc">Builds structured lecture material from selected corpus sources with per-slide TTS audio and PPTX output.</div></div>
+    <div class="mode-card"><div class="mode-icon">MODE 09</div><div class="mode-title">Bibliography Report</div><div class="mode-desc">Parses a manuscript's reference list, retrieves abstracts from OpenAlex and CrossRef, classifies source types, and generates a downloadable DOCX report.</div></div>
+    <div class="mode-card"><div class="mode-icon">MODE 10</div><div class="mode-title">Second Opinion</div><div class="mode-desc">A second LLM independently evaluates the first response's evidence fidelity — checking citation accuracy, unsupported claims, and overreach against the cited sources.</div></div>
+    <div class="mode-card"><div class="mode-icon">ADMIN</div><div class="mode-title">Admin Panel</div><div class="mode-desc">Corpus indexing, model selection, metadata enrichment, RAG quality diagnostics (FACTS evaluator), and system configuration in one management interface.</div></div>
     <div class="mode-card support"><div class="mode-icon">SUPPORT</div><div class="mode-title">Corpus Intelligence</div><div class="mode-desc">Citation Network · Co-citation · Keyword Map · Author Network · Similarity · Cluster Analysis</div></div>
   </div>
 </div></div></section>
@@ -322,7 +325,7 @@
   <div class="asset-grid">
     <div class="asset">
       <div class="asset-title">Documented codebase</div>
-      <div class="asset-desc">~46 000 lines across 50 modules with an existing interface, defined module structure, and documented operational logic. Architecture document, module reference, coding standards, and user guides included.</div>
+      <div class="asset-desc">~65 000 lines across 60 modules with an existing interface, defined module structure, and documented operational logic. Architecture document, module reference, coding standards, and user guides included.</div>
     </div>
     <div class="asset">
       <div class="asset-title">Defined architecture</div>
@@ -357,7 +360,7 @@
       <tr><td>Image Indexing</td><td>Docling PictureItem → VLM description → E5 embedding → ChromaDB</td></tr>
       <tr><td>Corpus Analytics</td><td>scikit-learn 1.8 · UMAP 0.5 · matplotlib · pandas 2.1</td></tr>
       <tr><td>UI &amp; Reporting</td><td>Streamlit 1.39 · python-docx 1.1 · openpyxl 3.1</td></tr>
-      <tr><td>Tested LLM Models</td><td>qwen2.5vl:32b · mixtral:8x7b · gemma3:27b · qwen3:32b · gpt-oss:20b · deepseek-r1:7b</td></tr>
+      <tr><td>Tested LLM Models</td><td>gpt-oss:20b · gemma4:26b · qwen3.5:9b · qwen3.5:35b · qwen3:32b · lfm2:24b · mixtral:8x7b</td></tr>
     </tbody>
   </table>
   <div class="callout">APE's software stack is built primarily on permissively licensed open-source components (including Apache 2.0, MIT, and BSD-style licenses). Based on the reviewed core dependencies, no obvious copyleft dependency constraints were identified. Model licenses and third-party service terms should be reviewed separately in transaction due diligence.</div>
@@ -409,7 +412,7 @@
 </div></div></section>
 
 <footer>
-  APE v5.12 &nbsp;·&nbsp; Copyright © Petri Heinonen
+  APE v7.2 &nbsp;·&nbsp; Copyright © Petri Heinonen
 </footer>
 
 <script>
